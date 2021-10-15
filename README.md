@@ -1,2 +1,9 @@
-# lambomoon-metaverse-web
+# Lambomoon Metaverse
+
 Lambomoon Metaverse website
+
+### License
+
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
+
+refer `LICENSE` file in this repository.
