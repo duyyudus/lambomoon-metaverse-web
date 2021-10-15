@@ -22,7 +22,7 @@ import {
   gameplay,
   token,
   tech,
-} from './markdown.js';
+} from '../assets/markdown.js';
 
 const sections = [
   { id: 'top', name: 'Intro', icon: '' },
