@@ -21,6 +21,8 @@ In the first mission, a small group of volunteers enter the portal, and return s
 Short names are **Lambo** and **Lambomoon.** And that alliance is **L.A.M.B.O Alliance.**
 
 Given success and insights of the first mission, humanity decides to build many moonbases on Lambomoon which is the forwarding station for exploratory missions on Lambo planet. They are called **Lambases**, where our journey begins.
+
+....
 `;
 
 export const solarSystem = `

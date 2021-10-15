@@ -12,6 +12,7 @@ import pic3 from '../assets/images/pic03.jpg';
 import pic4 from '../assets/images/pic04.jpg';
 import pic5 from '../assets/images/pic05.jpg';
 import pic6 from '../assets/images/pic06.jpg';
+import portalImg from '../assets/images/genesis-portal-final.jpg';
 
 import Scroll from '../components/Scroll';
 
@@ -74,7 +75,7 @@ const IndexPage = () => (
       <section id="showcase" className="three">
         <div className="container">
           <header>
-            <h2>Latest progresses</h2>
+            <h2>Latest progress</h2>
           </header>
 
           <p>
@@ -149,6 +150,10 @@ const IndexPage = () => (
             <h2>Story</h2>
           </header>
           <div style={{ textAlign: 'left' }}>
+            <a className="image fit">
+              <img src={portalImg} alt="Military" />
+            </a>
+            <br />
             <ReactMarkdown children={story} remarkPlugins={[remarkGfm]} />
             Please see full story at Lambomoon official{' '}
             <a href="https://wiki.lambomoon.xyz/Story-Gameplay-Reward-2264ecc193e04659adc9f3475e52ddf1">
