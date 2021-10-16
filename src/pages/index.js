@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
@@ -16,14 +16,28 @@ import portalImg from '../assets/images/genesis-portal-final.jpg';
 
 import Scroll from '../components/Scroll';
 
-import {
-  theGame,
-  story,
-  solarSystem,
-  gameplay,
-  token,
-  tech,
-} from '../assets/markdown.js';
+import { fetchMarkdown } from '../components/fetchMarkdown';
+
+const THE_GAME_URL =
+  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/theGame.md';
+
+const STORY_URL =
+  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/story.md';
+
+const SOLAR_SYSTEM_URL =
+  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/solarSystem.md';
+
+const GAMEPLAY_URL =
+  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/gameplay.md';
+
+const TOKEN_URL =
+  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/token.md';
+
+const TECH_URL =
+  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/tech.md';
+
+const TEAM_URL =
+  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/team.md';
 
 const sections = [
   { id: 'top', name: 'Intro', icon: '' },
@@ -39,256 +53,266 @@ const sections = [
   { id: 'community', name: 'Community', icon: '' },
 ];
 
-const IndexPage = () => (
-  <Layout>
-    <SideBar sections={sections} />
+const IndexPage = () => {
+  const [theGameMd, setTheGameMd] = useState('');
+  const [storyMd, setStoryMd] = useState('');
+  const [solarSystemMd, setSolarSystemMd] = useState('');
+  const [gameplayMd, setGameplayMd] = useState('');
+  const [tokenMd, setTokenMd] = useState('');
+  const [techMd, setTechMd] = useState('');
+  const [teamMd, setTeamMd] = useState('');
 
-    <div id="main">
-      <section id="top" className="one dark cover">
-        <div className="container">
-          <header>
-            <h2 className="alt">Blockbuster NFT game on Moonbeam/Polkadot</h2>
-            <p>Powered by Unreal Engine 5</p>
-          </header>
+  useEffect(() => {
+    fetchMarkdown(THE_GAME_URL, setTheGameMd);
+    fetchMarkdown(STORY_URL, setStoryMd);
+    fetchMarkdown(SOLAR_SYSTEM_URL, setSolarSystemMd);
+    fetchMarkdown(GAMEPLAY_URL, setGameplayMd);
+    fetchMarkdown(TOKEN_URL, setTokenMd);
+    fetchMarkdown(TECH_URL, setTechMd);
+    fetchMarkdown(TEAM_URL, setTeamMd);
+  }, []);
 
-          <footer>
-            <Scroll type="id" element={'game'}>
-              <a href="#game" className="button">
-                Let's fly
+  return (
+    <Layout>
+      <SideBar sections={sections} />
+
+      <div id="main">
+        <section id="top" className="one dark cover">
+          <div className="container">
+            <header>
+              <h2 className="alt">Blockbuster NFT game on Moonbeam/Polkadot</h2>
+              <p>Powered by Unreal Engine 5</p>
+            </header>
+
+            <footer>
+              <Scroll type="id" element={'game'}>
+                <a href="#game" className="button">
+                  Let's fly
+                </a>
+              </Scroll>
+            </footer>
+          </div>
+        </section>
+
+        <section id="game" className="two">
+          <div className="container">
+            <header>
+              <h2>The Game</h2>
+            </header>
+            <div style={{ textAlign: 'left' }}>
+              <ReactMarkdown children={theGameMd} remarkPlugins={[remarkGfm]} />
+            </div>
+          </div>
+        </section>
+
+        <section id="showcase" className="three">
+          <div className="container">
+            <header>
+              <h2>Latest progress</h2>
+            </header>
+
+            <p>
+              Unlike many other projects in crypto, we want to show what we have
+              done first.
+              <br />
+              The results say it all.
+            </p>
+
+            <div className="row">
+              <div className="col-4 col-12-mobile">
+                <article className="item">
+                  <a href="https://youtu.be/gTHD1tyZt1s" className="image fit">
+                    <img src={pic1} alt="" />
+                  </a>
+                  <header>
+                    <h3>PvP spaceship interior - WIP 1</h3>
+                  </header>
+                </article>
+                <article className="item">
+                  <a href="/#" className="image fit">
+                    <img src={pic2} alt="" />
+                  </a>
+                  <header>
+                    <h3>?</h3>
+                  </header>
+                </article>
+              </div>
+              <div className="col-4 col-12-mobile">
+                <article className="item">
+                  <a href="https://youtu.be/jlKHk2dtgx4" className="image fit">
+                    <img src={pic3} alt="" />
+                  </a>
+                  <header>
+                    <h3>Lambo planet construction - WIP 1</h3>
+                  </header>
+                </article>
+                <article className="item">
+                  <a href="/#" className="image fit">
+                    <img src={pic4} alt="" />
+                  </a>
+                  <header>
+                    <h3>?</h3>
+                  </header>
+                </article>
+              </div>
+              <div className="col-4 col-12-mobile">
+                <article className="item">
+                  <a href="/#" className="image fit">
+                    <img src={pic5} alt="" />
+                  </a>
+                  <header>
+                    <h3>?</h3>
+                  </header>
+                </article>
+                <article className="item">
+                  <a href="/#" className="image fit">
+                    <img src={pic6} alt="" />
+                  </a>
+                  <header>
+                    <h3>?</h3>
+                  </header>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="story" className="two">
+          <div className="container">
+            <header>
+              <h2>Story</h2>
+            </header>
+            <div style={{ textAlign: 'left' }}>
+              <a className="image fit">
+                <img src={portalImg} alt="Military" />
               </a>
-            </Scroll>
-          </footer>
-        </div>
-      </section>
-
-      <section id="game" className="two">
-        <div className="container">
-          <header>
-            <h2>The Game</h2>
-          </header>
-          <div style={{ textAlign: 'left' }}>
-            <ReactMarkdown children={theGame} remarkPlugins={[remarkGfm]} />
-          </div>
-        </div>
-      </section>
-
-      <section id="showcase" className="three">
-        <div className="container">
-          <header>
-            <h2>Latest progress</h2>
-          </header>
-
-          <p>
-            Unlike many other projects in crypto, we want to show what we have
-            done first.
-            <br />
-            The results say it all.
-          </p>
-
-          <div className="row">
-            <div className="col-4 col-12-mobile">
-              <article className="item">
-                <a href="https://youtu.be/gTHD1tyZt1s" className="image fit">
-                  <img src={pic1} alt="" />
-                </a>
-                <header>
-                  <h3>PvP spaceship interior - WIP 1</h3>
-                </header>
-              </article>
-              <article className="item">
-                <a href="/#" className="image fit">
-                  <img src={pic2} alt="" />
-                </a>
-                <header>
-                  <h3>?</h3>
-                </header>
-              </article>
-            </div>
-            <div className="col-4 col-12-mobile">
-              <article className="item">
-                <a href="https://youtu.be/jlKHk2dtgx4" className="image fit">
-                  <img src={pic3} alt="" />
-                </a>
-                <header>
-                  <h3>Lambo planet construction - WIP 1</h3>
-                </header>
-              </article>
-              <article className="item">
-                <a href="/#" className="image fit">
-                  <img src={pic4} alt="" />
-                </a>
-                <header>
-                  <h3>?</h3>
-                </header>
-              </article>
-            </div>
-            <div className="col-4 col-12-mobile">
-              <article className="item">
-                <a href="/#" className="image fit">
-                  <img src={pic5} alt="" />
-                </a>
-                <header>
-                  <h3>?</h3>
-                </header>
-              </article>
-              <article className="item">
-                <a href="/#" className="image fit">
-                  <img src={pic6} alt="" />
-                </a>
-                <header>
-                  <h3>?</h3>
-                </header>
-              </article>
+              <br />
+              <ReactMarkdown children={storyMd} remarkPlugins={[remarkGfm]} />
+              Please see full story at Lambomoon official{' '}
+              <a href="https://wiki.lambomoon.xyz/Story-Gameplay-Reward-2264ecc193e04659adc9f3475e52ddf1">
+                Wiki
+              </a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="story" className="two">
-        <div className="container">
-          <header>
-            <h2>Story</h2>
-          </header>
-          <div style={{ textAlign: 'left' }}>
-            <a className="image fit">
-              <img src={portalImg} alt="Military" />
-            </a>
-            <br />
-            <ReactMarkdown children={story} remarkPlugins={[remarkGfm]} />
-            Please see full story at Lambomoon official{' '}
-            <a href="https://wiki.lambomoon.xyz/Story-Gameplay-Reward-2264ecc193e04659adc9f3475e52ddf1">
-              Wiki
-            </a>
+        <section id="solar-system" className="two">
+          <div className="container">
+            <header>
+              <h2>L.A.M.B.O Solar System</h2>
+            </header>
+            <div style={{ textAlign: 'left' }}>
+              <ReactMarkdown
+                children={solarSystemMd}
+                remarkPlugins={[remarkGfm]}
+              />
+              Please follow latest updates at Lambomoon official{' '}
+              <a href="https://wiki.lambomoon.xyz/Lambo-Solar-System-aada66a6247e41819d1cc03be8f5f8b3">
+                Wiki
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="solar-system" className="two">
-        <div className="container">
-          <header>
-            <h2>L.A.M.B.O Solar System</h2>
-          </header>
-          <div style={{ textAlign: 'left' }}>
-            <ReactMarkdown children={solarSystem} remarkPlugins={[remarkGfm]} />
-            Please follow latest updates at Lambomoon official{' '}
-            <a href="https://wiki.lambomoon.xyz/Lambo-Solar-System-aada66a6247e41819d1cc03be8f5f8b3">
-              Wiki
-            </a>
+        <section id="gameplay" className="two">
+          <div className="container">
+            <header>
+              <h2>Gameplay To Earn</h2>
+            </header>
+            <div style={{ textAlign: 'left' }}>
+              <ReactMarkdown
+                children={gameplayMd}
+                remarkPlugins={[remarkGfm]}
+              />
+              Please see full gameplay at Lambomoon official{' '}
+              <a href="https://wiki.lambomoon.xyz/Story-Gameplay-Reward-2264ecc193e04659adc9f3475e52ddf1">
+                Wiki
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="gameplay" className="two">
-        <div className="container">
-          <header>
-            <h2>Gameplay To Earn</h2>
-          </header>
-          <div style={{ textAlign: 'left' }}>
-            <ReactMarkdown children={gameplay} remarkPlugins={[remarkGfm]} />
-            Please see full gameplay at Lambomoon official{' '}
-            <a href="https://wiki.lambomoon.xyz/Story-Gameplay-Reward-2264ecc193e04659adc9f3475e52ddf1">
-              Wiki
-            </a>
+        <section id="token" className="two">
+          <div className="container">
+            <header>
+              <h2>Token and Governance</h2>
+            </header>
+            <div style={{ textAlign: 'left' }}>
+              <ReactMarkdown children={tokenMd} remarkPlugins={[remarkGfm]} />
+              Please follow latest updates at Lambomoon official{' '}
+              <a href="https://wiki.lambomoon.xyz/Tokenomic-Governance-dd76127122f54ff28567e477b11d624d">
+                Wiki
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="token" className="two">
-        <div className="container">
-          <header>
-            <h2>Token and Governance</h2>
-          </header>
-          <div style={{ textAlign: 'left' }}>
-            <ReactMarkdown children={token} remarkPlugins={[remarkGfm]} />
-            Please follow latest updates at Lambomoon official{' '}
-            <a href="https://wiki.lambomoon.xyz/Tokenomic-Governance-dd76127122f54ff28567e477b11d624d">
-              Wiki
-            </a>
+        <section id="tech" className="two">
+          <div className="container">
+            <header>
+              <h2>Technology</h2>
+            </header>
+            <div style={{ textAlign: 'left' }}>
+              <ReactMarkdown children={techMd} remarkPlugins={[remarkGfm]} />
+              Please follow latest updates at Lambomoon official{' '}
+              <a href="https://wiki.lambomoon.xyz/Technology-384a7344ad0249d8a788364a31ee1d03">
+                Wiki
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="tech" className="two">
-        <div className="container">
-          <header>
-            <h2>Technology</h2>
-          </header>
-          <div style={{ textAlign: 'left' }}>
-            <ReactMarkdown children={tech} remarkPlugins={[remarkGfm]} />
-            Please follow latest updates at Lambomoon official{' '}
-            <a href="https://wiki.lambomoon.xyz/Technology-384a7344ad0249d8a788364a31ee1d03">
-              Wiki
-            </a>
+        <section id="roadmap" className="two">
+          <div className="container">
+            <header>
+              <h2>Roadmap</h2>
+            </header>
+            <div style={{ textAlign: 'left' }}>
+              {/* <ReactMarkdown children={roadmapMd} remarkPlugins={[remarkGfm]} /> */}
+              Please follow latest roadmap at Lambomoon official{' '}
+              <a href="https://wiki.lambomoon.xyz/Roadmap-34830b97d6254b94a4099c748819a7d3">
+                Wiki
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="roadmap" className="two">
-        <div className="container">
-          <header>
-            <h2>Roadmap</h2>
-          </header>
-          <div style={{ textAlign: 'left' }}>
-            {/* <ReactMarkdown children={tech} remarkPlugins={[remarkGfm]} /> */}
-            Please follow latest roadmap at Lambomoon official{' '}
-            <a href="https://wiki.lambomoon.xyz/Roadmap-34830b97d6254b94a4099c748819a7d3">
-              Wiki
-            </a>
+        <section id="about" className="four">
+          <div className="container">
+            <header>
+              <h2>Team</h2>
+            </header>
+
+            <div style={{ textAlign: 'left' }}>
+              <ReactMarkdown children={teamMd} remarkPlugins={[remarkGfm]} />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="about" className="four">
-        <div className="container">
-          <header>
-            <h2>Team</h2>
-          </header>
+        <section id="community" className="five">
+          <div className="container">
+            <header>
+              <h2>Community</h2>
+            </header>
 
-          <p style={{ textAlign: 'left' }}>
-            We are a group of early supporters in Polkadot/Kusama ecosystem (
-            joined Polkadot ICO ), with diversified experience in many
-            industries, especially blockchain and AAA game development.
-            <br />
-            <br />
-            The founder, in particularly, has worked in AAA gamedev and 3D
-            industry for 10 years, as well as been involved in crypto since 2016
-            as retail investor. He knows how to combine the best of both worlds.
-            We are semi-anon, although we take our privacy serious, if you are
-            VCs and want to perform due diligence, just contact us and we can
-            get to know each other.
-            <br />
-            <br />
-            Our mission is to explore new ideas and biz models that only viable
-            with blockchain technology and decentralized economy, in combination
-            with high-end game development technology. Lambomoon Metaverse is
-            our first effort in this long journey.
-          </p>
-        </div>
-      </section>
+            <p>
+              <a href="https://twitter.com/lambomoon_verse">Twitter</a>
+              {' • '}
+              <a href="https://medium.com/lambomoon-metaverse">Medium</a>
+              {' • '}
+              <a href="https://t.me/lambomoon_metaverse">Telegram</a>
+              {' • '}
+              <a href="https://discord.gg/tdaenaaJHt">Discord</a>
+              {' • '}
+              <a href="https://wiki.lambomoon.xyz">Wiki</a>
+            </p>
+          </div>
+        </section>
+      </div>
 
-      <section id="community" className="five">
-        <div className="container">
-          <header>
-            <h2>Community</h2>
-          </header>
-
-          <p>
-            <a href="https://twitter.com/lambomoon_verse">Twitter</a>
-            {' • '}
-            <a href="https://medium.com/lambomoon-metaverse">Medium</a>
-            {' • '}
-            <a href="https://t.me/lambomoon_metaverse">Telegram</a>
-            {' • '}
-            <a href="https://discord.gg/tdaenaaJHt">Discord</a>
-            {' • '}
-            <a href="https://wiki.lambomoon.xyz">Wiki</a>
-          </p>
-        </div>
-      </section>
-    </div>
-
-    <PageFooter />
-  </Layout>
-);
+      <PageFooter />
+    </Layout>
+  );
+};
 
 export default IndexPage;
