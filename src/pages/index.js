@@ -13,6 +13,7 @@ import pic4 from '../assets/images/pic04.jpg';
 import pic5 from '../assets/images/pic05.jpg';
 import pic6 from '../assets/images/pic06.jpg';
 import portalImg from '../assets/images/genesis-portal-final.jpg';
+import lamboSolarImg from '../assets/images/lambo-solar-system.png';
 
 import Scroll from '../components/Scroll';
 
@@ -202,6 +203,10 @@ const IndexPage = () => {
               <h2>L.A.M.B.O Solar System</h2>
             </header>
             <div style={{ textAlign: 'left' }}>
+              <a className="image fit">
+                <img src={lamboSolarImg} alt="L.A.M.B.O solar system" />
+              </a>
+              <br />
               <ReactMarkdown
                 children={solarSystemMd}
                 remarkPlugins={[remarkGfm]}
