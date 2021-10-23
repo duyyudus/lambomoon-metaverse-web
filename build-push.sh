@@ -1,2 +1,1 @@
-sudo docker-compose build
-sudo docker-compose push
+docker build --platform linux/amd64 -t duyyudus/lambomoon-metaverse-website --push .
