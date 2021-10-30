@@ -12,6 +12,7 @@ import pic3 from '../assets/images/pic03.jpg';
 import pic4 from '../assets/images/pic04.jpg';
 import pic5 from '../assets/images/pic05.jpg';
 import pic6 from '../assets/images/pic06.jpg';
+import moonpostPreview from '../assets/images/moonpost-preview.png';
 import portalImg from '../assets/images/genesis-portal-final.jpg';
 import lamboSolarImg from '../assets/images/lambo-solar-system.png';
 
@@ -122,6 +123,25 @@ const IndexPage = () => {
             <div className="row">
               <div className="col-4 col-12-mobile">
                 <article className="item">
+                  <a href="https://youtu.be/ZLLvOjT79B4" className="image fit">
+                    <img src={moonpostPreview} alt="" />
+                  </a>
+                  <header>
+                    <h3>Lambase Moonpost v1</h3>
+                  </header>
+                </article>
+                <article className="item">
+                  <a href="/#" className="image fit">
+                    <img src={pic6} alt="" />
+                  </a>
+                  <header>
+                    <h3>?</h3>
+                  </header>
+                </article>
+              </div>
+
+              <div className="col-4 col-12-mobile">
+                <article className="item">
                   <a href="https://youtu.be/gTHD1tyZt1s" className="image fit">
                     <img src={pic1} alt="" />
                   </a>
@@ -138,6 +158,7 @@ const IndexPage = () => {
                   </header>
                 </article>
               </div>
+
               <div className="col-4 col-12-mobile">
                 <article className="item">
                   <a href="https://youtu.be/jlKHk2dtgx4" className="image fit">
@@ -150,24 +171,6 @@ const IndexPage = () => {
                 <article className="item">
                   <a href="/#" className="image fit">
                     <img src={pic4} alt="" />
-                  </a>
-                  <header>
-                    <h3>?</h3>
-                  </header>
-                </article>
-              </div>
-              <div className="col-4 col-12-mobile">
-                <article className="item">
-                  <a href="/#" className="image fit">
-                    <img src={pic5} alt="" />
-                  </a>
-                  <header>
-                    <h3>?</h3>
-                  </header>
-                </article>
-                <article className="item">
-                  <a href="/#" className="image fit">
-                    <img src={pic6} alt="" />
                   </a>
                   <header>
                     <h3>?</h3>
