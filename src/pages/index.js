@@ -15,6 +15,7 @@ import pic6 from '../assets/images/pic06.jpg';
 import moonpostPreview from '../assets/images/moonpost-preview.png';
 import portalImg from '../assets/images/genesis-portal-final.jpg';
 import lamboSolarImg from '../assets/images/lambo-solar-system.png';
+import moonlandSmallImg from '../assets/images/lambomoon-land-small-preview.png';
 
 import Scroll from '../components/Scroll';
 
@@ -127,15 +128,15 @@ const IndexPage = () => {
                     <img src={moonpostPreview} alt="" />
                   </a>
                   <header>
-                    <h3>Lambase Moonpost v1</h3>
+                    <h3>Lambase Moonpost - v1</h3>
                   </header>
                 </article>
                 <article className="item">
-                  <a href="/#" className="image fit">
-                    <img src={pic6} alt="" />
+                  <a href="https://youtu.be/t-FzkUd1zlc" className="image fit">
+                    <img src={moonlandSmallImg} alt="" />
                   </a>
                   <header>
-                    <h3>?</h3>
+                    <h3>Lambomoon Land - Small Plot - v1</h3>
                   </header>
                 </article>
               </div>
