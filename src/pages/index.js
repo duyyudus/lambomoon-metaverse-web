@@ -14,8 +14,11 @@ import pic5 from '../assets/images/pic05.jpg';
 import pic6 from '../assets/images/pic06.jpg';
 import moonpostPreview from '../assets/images/moonpost-preview.png';
 import portalImg from '../assets/images/genesis-portal-final.jpg';
+import explorationImg from '../assets/images/lambo-exploration-final.jpg';
 import lamboSolarImg from '../assets/images/lambo-solar-system.png';
 import moonlandSmallImg from '../assets/images/lambomoon-land-small-preview.png';
+import moonlandMedImg from '../assets/images/lambomoon-land-medium-preview.png';
+import moonlandLargeImg from '../assets/images/lambomoon-land-large-preview.png';
 
 import Scroll from '../components/Scroll';
 
@@ -90,7 +93,7 @@ const IndexPage = () => {
             <footer>
               <Scroll type="id" element={'game'}>
                 <a href="#game" className="button">
-                  Let's fly
+                  Enter L.A.M.B.O verse
                 </a>
               </Scroll>
             </footer>
@@ -103,6 +106,10 @@ const IndexPage = () => {
               <h2>The Game</h2>
             </header>
             <div style={{ textAlign: 'left' }}>
+              <a className="image fit">
+                <img src={explorationImg} alt="L.A.M.B.O ALLIANCE is coming" />
+              </a>
+              <br />
               <ReactMarkdown children={theGameMd} remarkPlugins={[remarkGfm]} />
             </div>
           </div>
@@ -124,14 +131,6 @@ const IndexPage = () => {
             <div className="row">
               <div className="col-4 col-12-mobile">
                 <article className="item">
-                  <a href="https://youtu.be/ZLLvOjT79B4" className="image fit">
-                    <img src={moonpostPreview} alt="" />
-                  </a>
-                  <header>
-                    <h3>Lambase Moonpost - v1</h3>
-                  </header>
-                </article>
-                <article className="item">
                   <a href="https://youtu.be/t-FzkUd1zlc" className="image fit">
                     <img src={moonlandSmallImg} alt="" />
                   </a>
@@ -139,42 +138,53 @@ const IndexPage = () => {
                     <h3>Lambomoon Land - Small Plot - v1</h3>
                   </header>
                 </article>
+
+                <article className="item">
+                  <a href="https://youtu.be/ZLLvOjT79B4" className="image fit">
+                    <img src={moonpostPreview} alt="" />
+                  </a>
+                  <header>
+                    <h3>Lambase Moonpost - v1</h3>
+                  </header>
+                </article>
               </div>
 
               <div className="col-4 col-12-mobile">
                 <article className="item">
-                  <a href="https://youtu.be/gTHD1tyZt1s" className="image fit">
+                  <a href="https://youtu.be/L-UxlDiiCg4" className="image fit">
+                    <img src={moonlandMedImg} alt="" />
+                  </a>
+                  <header>
+                    <h3>Lambomoon Land - Medium Plot - v1</h3>
+                  </header>
+                </article>
+
+                <article className="item">
+                  <a href="https://youtu.be/pW3KRJe8Bn4" className="image fit">
                     <img src={pic1} alt="" />
                   </a>
                   <header>
                     <h3>PvP spaceship interior - WIP 1</h3>
                   </header>
                 </article>
-                <article className="item">
-                  <a href="/#" className="image fit">
-                    <img src={pic2} alt="" />
-                  </a>
-                  <header>
-                    <h3>?</h3>
-                  </header>
-                </article>
               </div>
 
               <div className="col-4 col-12-mobile">
                 <article className="item">
-                  <a href="https://youtu.be/jlKHk2dtgx4" className="image fit">
+                  <a href="https://youtu.be/9SYc9vqztl4" className="image fit">
+                    <img src={moonlandLargeImg} alt="" />
+                  </a>
+                  <header>
+                    <h3>Lambomoon Land - Large Plot - v1</h3>
+                  </header>
+                </article>
+
+                <article className="item">
+                  <a href="https://youtu.be/Fs3q9qS6_U0" className="image fit">
                     <img src={pic3} alt="" />
                   </a>
                   <header>
                     <h3>Lambo planet construction - WIP 1</h3>
-                  </header>
-                </article>
-                <article className="item">
-                  <a href="/#" className="image fit">
-                    <img src={pic4} alt="" />
-                  </a>
-                  <header>
-                    <h3>?</h3>
                   </header>
                 </article>
               </div>
@@ -189,7 +199,7 @@ const IndexPage = () => {
             </header>
             <div style={{ textAlign: 'left' }}>
               <a className="image fit">
-                <img src={portalImg} alt="Military" />
+                <img src={portalImg} alt="Genesis Portal" />
               </a>
               <br />
               <ReactMarkdown children={storyMd} remarkPlugins={[remarkGfm]} />
