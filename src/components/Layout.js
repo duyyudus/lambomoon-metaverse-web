@@ -64,7 +64,7 @@ class Layout extends Component {
               />
               <meta
                 property="twitter:image"
-                content="https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/master/static/banner-main.png"
+                content="https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/master/static/twitter-preview.png"
               />
 
               <meta property="og:url" content="https://lambomoon.xyz" />
@@ -76,7 +76,7 @@ class Layout extends Component {
               />
               <meta
                 property="og:image"
-                content="https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/master/static/banner-main.png"
+                content="https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/master/static/twitter-preview.png"
               />
             </Helmet>
             <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>
