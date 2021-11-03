@@ -6,13 +6,15 @@ import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/SideBar';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
-import pic4 from '../assets/images/pic04.jpg';
-import pic5 from '../assets/images/pic05.jpg';
-import pic6 from '../assets/images/pic06.jpg';
+import spaceshipInt from '../assets/images/spaceshipInt.jpg';
+import planetWip from '../assets/images/planetWip.jpg';
+
+import picUnrevealed from '../assets/images/picUnrevealed.jpg';
+
 import moonpostPreview from '../assets/images/moonpost-preview.png';
+import lunarDestroyerPreview from '../assets/images/lunar-destroyer-preview.png';
+import lunarDestroyerBp from '../assets/images/lunar-destroyer-bp.png';
+
 import portalImg from '../assets/images/genesis-portal-final.jpg';
 import explorationImg from '../assets/images/lambo-exploration-final.jpg';
 import lamboSolarImg from '../assets/images/lambo-solar-system.png';
@@ -93,7 +95,7 @@ const IndexPage = () => {
             <footer>
               <Scroll type="id" element={'game'}>
                 <a href="#game" className="button">
-                  Enter L.A.M.B.O verse
+                  Enter L.A.M.B.O Verse
                 </a>
               </Scroll>
             </footer>
@@ -110,7 +112,15 @@ const IndexPage = () => {
                 <img src={explorationImg} alt="L.A.M.B.O ALLIANCE is coming" />
               </a>
               <br />
+
               <ReactMarkdown children={theGameMd} remarkPlugins={[remarkGfm]} />
+
+              <a className="image fit">
+                <img
+                  src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/99934eeb-6421-4937-a12a-e2446ea1d1ca/side-pic-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211103%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211103T071618Z&X-Amz-Expires=86400&X-Amz-Signature=cabed16509aef663f7495a2b61cd30a01314b24aad1199b00342f280601f80e8&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22side-pic-1.png%22"
+                  alt="Genesis Lunar Destroyer"
+                />
+              </a>
             </div>
           </div>
         </section>
@@ -131,6 +141,15 @@ const IndexPage = () => {
             <div className="row">
               <div className="col-4 col-12-mobile">
                 <article className="item">
+                  <a href="https://youtu.be/WocNbI8nQ4I" className="image fit">
+                    <img src={lunarDestroyerPreview} alt="" />
+                  </a>
+                  <header>
+                    <h3>Genesis Lunar Destroyer - v1</h3>
+                  </header>
+                </article>
+
+                <article className="item">
                   <a href="https://youtu.be/t-FzkUd1zlc" className="image fit">
                     <img src={moonlandSmallImg} alt="" />
                   </a>
@@ -140,16 +159,28 @@ const IndexPage = () => {
                 </article>
 
                 <article className="item">
-                  <a href="https://youtu.be/ZLLvOjT79B4" className="image fit">
-                    <img src={moonpostPreview} alt="" />
+                  <a href="https://youtu.be/Fs3q9qS6_U0" className="image fit">
+                    <img src={planetWip} alt="" />
                   </a>
                   <header>
-                    <h3>Lambase Moonpost - v1</h3>
+                    <h3>Lambo planet construction - WIP 1</h3>
                   </header>
                 </article>
               </div>
 
               <div className="col-4 col-12-mobile">
+                <article className="item">
+                  <a
+                    href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f5bc0948-5100-464c-93d3-ada07a996900/layout.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211103%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211103T060721Z&X-Amz-Expires=86400&X-Amz-Signature=26485eaf602826ae899e756fb8c395b0c1c721e8977d0dc10a0b71f2c312486d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22layout.png%22"
+                    className="image fit"
+                  >
+                    <img src={lunarDestroyerBp} alt="" />
+                  </a>
+                  <header>
+                    <h3>Genesis Lunar Destroyer - v1 - Blueprint</h3>
+                  </header>
+                </article>
+
                 <article className="item">
                   <a href="https://youtu.be/L-UxlDiiCg4" className="image fit">
                     <img src={moonlandMedImg} alt="" />
@@ -161,7 +192,7 @@ const IndexPage = () => {
 
                 <article className="item">
                   <a href="https://youtu.be/pW3KRJe8Bn4" className="image fit">
-                    <img src={pic1} alt="" />
+                    <img src={spaceshipInt} alt="" />
                   </a>
                   <header>
                     <h3>PvP spaceship interior - WIP 1</h3>
@@ -180,11 +211,20 @@ const IndexPage = () => {
                 </article>
 
                 <article className="item">
-                  <a href="https://youtu.be/Fs3q9qS6_U0" className="image fit">
-                    <img src={pic3} alt="" />
+                  <a href="https://youtu.be/ZLLvOjT79B4" className="image fit">
+                    <img src={moonpostPreview} alt="" />
                   </a>
                   <header>
-                    <h3>Lambo planet construction - WIP 1</h3>
+                    <h3>Lambase Moonpost - v1</h3>
+                  </header>
+                </article>
+
+                <article className="item">
+                  <a href="/#" className="image fit">
+                    <img src={picUnrevealed} alt="" />
+                  </a>
+                  <header>
+                    <h3>?</h3>
                   </header>
                 </article>
               </div>
