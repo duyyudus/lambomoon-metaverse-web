@@ -117,7 +117,7 @@ const IndexPage = () => {
 
               <a className="image fit">
                 <img
-                  src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/99934eeb-6421-4937-a12a-e2446ea1d1ca/side-pic-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211103%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211103T071618Z&X-Amz-Expires=86400&X-Amz-Signature=cabed16509aef663f7495a2b61cd30a01314b24aad1199b00342f280601f80e8&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22side-pic-1.png%22"
+                  src="https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/static/side-pic-1.png"
                   alt="Genesis Lunar Destroyer"
                 />
               </a>
