@@ -14,6 +14,7 @@ import picUnrevealed from '../assets/images/picUnrevealed.jpg';
 import moonpostPreview from '../assets/images/moonpost-preview.png';
 import lunarDestroyerPreview from '../assets/images/lunar-destroyer-preview.png';
 import lunarDestroyerBp from '../assets/images/lunar-destroyer-bp.png';
+import teaserPreview from '../assets/images/teaser.jpg';
 
 import portalImg from '../assets/images/genesis-portal-final.jpg';
 import explorationImg from '../assets/images/lambo-exploration-final.jpg';
@@ -93,11 +94,14 @@ const IndexPage = () => {
             </header>
 
             <footer>
-              <Scroll type="id" element={'game'}>
-                <a href="#game" className="button">
-                  Enter L.A.M.B.O Verse
-                </a>
-              </Scroll>
+              {/* <Scroll type="id" element={'game'}> */}
+              <a
+                href="https://www.youtube.com/watch?v=tHz1bQ90aSQ"
+                className="button"
+              >
+                Watch Teaser Video
+              </a>
+              {/* </Scroll> */}
             </footer>
           </div>
         </section>
@@ -141,6 +145,18 @@ const IndexPage = () => {
             <div className="row">
               <div className="col-4 col-12-mobile">
                 <article className="item">
+                  <a
+                    href="https://www.youtube.com/watch?v=tHz1bQ90aSQ"
+                    className="image fit"
+                  >
+                    <img src={teaserPreview} alt="" />
+                  </a>
+                  <header>
+                    <h3>Lambomoon Teaser</h3>
+                  </header>
+                </article>
+
+                <article className="item">
                   <a href="https://youtu.be/WocNbI8nQ4I" className="image fit">
                     <img src={lunarDestroyerPreview} alt="" />
                   </a>
@@ -155,15 +171,6 @@ const IndexPage = () => {
                   </a>
                   <header>
                     <h3>Lambomoon Land - Small Plot - v1</h3>
-                  </header>
-                </article>
-
-                <article className="item">
-                  <a href="https://youtu.be/Fs3q9qS6_U0" className="image fit">
-                    <img src={planetWip} alt="" />
-                  </a>
-                  <header>
-                    <h3>Lambo planet construction - WIP 1</h3>
                   </header>
                 </article>
               </div>
@@ -220,11 +227,11 @@ const IndexPage = () => {
                 </article>
 
                 <article className="item">
-                  <a href="/#" className="image fit">
-                    <img src={picUnrevealed} alt="" />
+                  <a href="https://youtu.be/Fs3q9qS6_U0" className="image fit">
+                    <img src={planetWip} alt="" />
                   </a>
                   <header>
-                    <h3>?</h3>
+                    <h3>Lambo planet construction - WIP 1</h3>
                   </header>
                 </article>
               </div>
