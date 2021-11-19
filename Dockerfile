@@ -1,13 +1,15 @@
-FROM node:14-alpine as build
+FROM node:lts-slim as build
 
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 
-RUN npm install -g gatsby-cli
-
 COPY package.json ./
-COPY yarn.lock ./
+
+RUN apt-get update || : && apt-get install python -y
+
+RUN npm install -g gatsby-cli
 RUN yarn install
+
 COPY . ./
 RUN yarn build
 
