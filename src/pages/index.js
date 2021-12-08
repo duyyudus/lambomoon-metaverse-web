@@ -16,44 +16,45 @@ import lunarDestroyerPreview from '../assets/images/lunar-destroyer-preview.png'
 import lunarDestroyerBp from '../assets/images/lunar-destroyer-bp.png';
 import teaserPreview from '../assets/images/teaser.jpg';
 
+import destroyerImg from '../assets/images/lunar-destroyer.png';
 import portalImg from '../assets/images/genesis-portal-final.jpg';
-import explorationImg from '../assets/images/lambo-exploration-final.jpg';
-import lamboSolarImg from '../assets/images/lambo-solar-system.png';
-import moonlandSmallImg from '../assets/images/lambomoon-land-small-preview.png';
-import moonlandMedImg from '../assets/images/lambomoon-land-medium-preview.png';
-import moonlandLargeImg from '../assets/images/lambomoon-land-large-preview.png';
+import explorationImg from '../assets/images/lamda-exploration-final.jpg';
+import lamdaSolarImg from '../assets/images/lamda-solar-system.png';
+import moonlandSmallImg from '../assets/images/lamdamoon-land-small-preview.png';
+import moonlandMedImg from '../assets/images/lamdamoon-land-medium-preview.png';
+import moonlandLargeImg from '../assets/images/lamdamoon-land-large-preview.png';
 
 import Scroll from '../components/Scroll';
 
 import { fetchMarkdown } from '../components/fetchMarkdown';
 
 const THE_GAME_URL =
-  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/theGame.md';
+  'https://raw.githubusercontent.com/duyyudus/lamdamoon-metaverse-web/main/markdown/theGame.md';
 
 const STORY_URL =
-  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/story.md';
+  'https://raw.githubusercontent.com/duyyudus/lamdamoon-metaverse-web/main/markdown/story.md';
 
 const SOLAR_SYSTEM_URL =
-  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/solarSystem.md';
+  'https://raw.githubusercontent.com/duyyudus/lamdamoon-metaverse-web/main/markdown/solarSystem.md';
 
 const GAMEPLAY_URL =
-  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/gameplay.md';
+  'https://raw.githubusercontent.com/duyyudus/lamdamoon-metaverse-web/main/markdown/gameplay.md';
 
 const TOKEN_URL =
-  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/token.md';
+  'https://raw.githubusercontent.com/duyyudus/lamdamoon-metaverse-web/main/markdown/token.md';
 
 const TECH_URL =
-  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/tech.md';
+  'https://raw.githubusercontent.com/duyyudus/lamdamoon-metaverse-web/main/markdown/tech.md';
 
 const TEAM_URL =
-  'https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/markdown/team.md';
+  'https://raw.githubusercontent.com/duyyudus/lamdamoon-metaverse-web/main/markdown/team.md';
 
 const sections = [
   { id: 'top', name: 'Intro', icon: '' },
   { id: 'game', name: 'The Game', icon: '' },
   { id: 'showcase', name: 'Showcase', icon: '' },
   { id: 'story', name: 'Story', icon: '' },
-  { id: 'solar-system', name: 'Lambo Solar System', icon: '' },
+  { id: 'solar-system', name: 'Lamda Solar System', icon: '' },
   { id: 'gameplay', name: 'Gameplay To Earn', icon: '' },
   { id: 'token', name: 'Token and Governance', icon: '' },
   { id: 'tech', name: 'Technology', icon: '' },
@@ -89,7 +90,9 @@ const IndexPage = () => {
         <section id="top" className="one dark cover">
           <div className="container">
             <header>
-              <h2 className="alt">Blockbuster NFT game on Moonbeam/Polkadot</h2>
+              <h2 className="alt">
+                An experimental NFT game on Moonbeam/Polkadot
+              </h2>
               <p>Powered by Unreal Engine 5</p>
             </header>
 
@@ -113,17 +116,14 @@ const IndexPage = () => {
             </header>
             <div style={{ textAlign: 'left' }}>
               <a className="image fit">
-                <img src={explorationImg} alt="L.A.M.B.O ALLIANCE is coming" />
+                <img src={explorationImg} alt="L.A.M.D.A ALLIANCE is coming" />
               </a>
               <br />
 
               <ReactMarkdown children={theGameMd} remarkPlugins={[remarkGfm]} />
 
               <a className="image fit">
-                <img
-                  src="https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/main/static/side-pic-1.png"
-                  alt="Genesis Lunar Destroyer"
-                />
+                <img src={destroyerImg} alt="Genesis Lunar Destroyer" />
               </a>
             </div>
           </div>
@@ -152,7 +152,7 @@ const IndexPage = () => {
                     <img src={teaserPreview} alt="" />
                   </a>
                   <header>
-                    <h3>Lambomoon Teaser</h3>
+                    <h3>Lamdamoon Teaser</h3>
                   </header>
                 </article>
 
@@ -170,7 +170,7 @@ const IndexPage = () => {
                     <img src={moonlandSmallImg} alt="" />
                   </a>
                   <header>
-                    <h3>Lambomoon Land - Small Plot - v1</h3>
+                    <h3>Lamdamoon Land - Small Plot - v1</h3>
                   </header>
                 </article>
               </div>
@@ -193,7 +193,7 @@ const IndexPage = () => {
                     <img src={moonlandMedImg} alt="" />
                   </a>
                   <header>
-                    <h3>Lambomoon Land - Medium Plot - v1</h3>
+                    <h3>Lamdamoon Land - Medium Plot - v1</h3>
                   </header>
                 </article>
 
@@ -213,7 +213,7 @@ const IndexPage = () => {
                     <img src={moonlandLargeImg} alt="" />
                   </a>
                   <header>
-                    <h3>Lambomoon Land - Large Plot - v1</h3>
+                    <h3>Lamdamoon Land - Large Plot - v1</h3>
                   </header>
                 </article>
 
@@ -231,7 +231,7 @@ const IndexPage = () => {
                     <img src={planetWip} alt="" />
                   </a>
                   <header>
-                    <h3>Lambo planet construction - WIP 1</h3>
+                    <h3>Lamda planet construction - WIP 1</h3>
                   </header>
                 </article>
               </div>
@@ -250,8 +250,8 @@ const IndexPage = () => {
               </a>
               <br />
               <ReactMarkdown children={storyMd} remarkPlugins={[remarkGfm]} />
-              Please see full story at Lambomoon official{' '}
-              <a href="https://wiki.lambomoon.xyz/Story-Gameplay-Reward-2264ecc193e04659adc9f3475e52ddf1">
+              Please see full story at Lamdamoon official{' '}
+              <a href="https://wiki.lamdamoon.xyz/Story-Gameplay-Reward-2264ecc193e04659adc9f3475e52ddf1">
                 Wiki
               </a>
             </div>
@@ -261,19 +261,19 @@ const IndexPage = () => {
         <section id="solar-system" className="two">
           <div className="container">
             <header>
-              <h2>L.A.M.B.O Solar System</h2>
+              <h2>L.A.M.D.A Solar System</h2>
             </header>
             <div style={{ textAlign: 'left' }}>
               <a className="image fit">
-                <img src={lamboSolarImg} alt="L.A.M.B.O solar system" />
+                <img src={lamdaSolarImg} alt="L.A.M.D.A solar system" />
               </a>
               <br />
               <ReactMarkdown
                 children={solarSystemMd}
                 remarkPlugins={[remarkGfm]}
               />
-              Please follow latest updates at Lambomoon official{' '}
-              <a href="https://wiki.lambomoon.xyz/Lambo-Solar-System-aada66a6247e41819d1cc03be8f5f8b3">
+              Please follow latest updates at Lamdamoon official{' '}
+              <a href="https://wiki.lamdamoon.xyz/Lamda-Solar-System-aada66a6247e41819d1cc03be8f5f8b3">
                 Wiki
               </a>
             </div>
@@ -290,8 +290,8 @@ const IndexPage = () => {
                 children={gameplayMd}
                 remarkPlugins={[remarkGfm]}
               />
-              Please see full gameplay at Lambomoon official{' '}
-              <a href="https://wiki.lambomoon.xyz/Story-Gameplay-Reward-2264ecc193e04659adc9f3475e52ddf1">
+              Please see full gameplay at Lamdamoon official{' '}
+              <a href="https://wiki.lamdamoon.xyz/Story-Gameplay-Reward-2264ecc193e04659adc9f3475e52ddf1">
                 Wiki
               </a>
             </div>
@@ -305,8 +305,8 @@ const IndexPage = () => {
             </header>
             <div style={{ textAlign: 'left' }}>
               <ReactMarkdown children={tokenMd} remarkPlugins={[remarkGfm]} />
-              Please follow latest updates at Lambomoon official{' '}
-              <a href="https://wiki.lambomoon.xyz/Tokenomic-Governance-dd76127122f54ff28567e477b11d624d">
+              Please follow latest updates at Lamdamoon official{' '}
+              <a href="https://wiki.lamdamoon.xyz/Tokenomic-Governance-dd76127122f54ff28567e477b11d624d">
                 Wiki
               </a>
             </div>
@@ -320,8 +320,8 @@ const IndexPage = () => {
             </header>
             <div style={{ textAlign: 'left' }}>
               <ReactMarkdown children={techMd} remarkPlugins={[remarkGfm]} />
-              Please follow latest updates at Lambomoon official{' '}
-              <a href="https://wiki.lambomoon.xyz/Technology-384a7344ad0249d8a788364a31ee1d03">
+              Please follow latest updates at Lamdamoon official{' '}
+              <a href="https://wiki.lamdamoon.xyz/Technology-384a7344ad0249d8a788364a31ee1d03">
                 Wiki
               </a>
             </div>
@@ -335,8 +335,8 @@ const IndexPage = () => {
             </header>
             <div style={{ textAlign: 'left' }}>
               {/* <ReactMarkdown children={roadmapMd} remarkPlugins={[remarkGfm]} /> */}
-              Please follow latest roadmap at Lambomoon official{' '}
-              <a href="https://wiki.lambomoon.xyz/Roadmap-34830b97d6254b94a4099c748819a7d3">
+              Please follow latest roadmap at Lamdamoon official{' '}
+              <a href="https://wiki.lamdamoon.xyz/Roadmap-34830b97d6254b94a4099c748819a7d3">
                 Wiki
               </a>
             </div>
@@ -362,15 +362,15 @@ const IndexPage = () => {
             </header>
 
             <p>
-              <a href="https://twitter.com/lambomoon_verse">Twitter</a>
+              <a href="https://twitter.com/lamdamoon_verse">Twitter</a>
               {' • '}
-              <a href="https://medium.com/lambomoon-metaverse">Medium</a>
+              <a href="https://medium.com/lamdamoon-metaverse">Medium</a>
               {' • '}
-              <a href="https://t.me/lambomoon_metaverse">Telegram</a>
+              <a href="https://t.me/lamdamoon_metaverse">Telegram</a>
               {' • '}
               <a href="https://discord.gg/tdaenaaJHt">Discord</a>
               {' • '}
-              <a href="https://wiki.lambomoon.xyz">Wiki</a>
+              <a href="https://wiki.lamdamoon.xyz">Wiki</a>
             </p>
           </div>
         </section>

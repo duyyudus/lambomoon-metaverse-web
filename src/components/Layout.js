@@ -49,34 +49,34 @@ class Layout extends Component {
               ]}
             >
               <meta charSet="utf-8" />
-              <title>Lambomoon Metaverse</title>
+              <title>Lamdamoon Metaverse</title>
               <meta
                 name="description"
-                content="A blockbuster NFT metaverse powered by Moonbeam/Polkadot and Unreal Engine 5"
+                content="An experimental high-end NFT metaverse powered by Moonbeam/Polkadot and Unreal Engine 5"
               />
 
               <meta property="twitter:card" content="summary_large_image" />
-              <meta property="twitter:url" content="https://lambomoon.xyz/" />
-              <meta property="twitter:title" content="Lambomoon Metaverse" />
+              <meta property="twitter:url" content="https://lamdamoon.xyz/" />
+              <meta property="twitter:title" content="Lamdamoon Metaverse" />
               <meta
                 property="twitter:description"
-                content="A blockbuster NFT metaverse powered by Moonbeam/Polkadot and Unreal Engine 5"
+                content="An experimental high-end NFT metaverse powered by Moonbeam/Polkadot and Unreal Engine 5"
               />
               <meta
                 property="twitter:image"
-                content="https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/master/static/twitter-preview.png"
+                content="https://raw.githubusercontent.com/duyyudus/lamdamoon-metaverse-web/master/static/twitter-preview.png"
               />
 
-              <meta property="og:url" content="https://lambomoon.xyz" />
+              <meta property="og:url" content="https://lamdamoon.xyz" />
               <meta property="og:type" content="website" />
-              <meta property="og:title" content="Lambomoon Metaverse" />
+              <meta property="og:title" content="Lamdamoon Metaverse" />
               <meta
                 property="og:description"
-                content="A blockbuster NFT metaverse powered by Moonbeam/Polkadot and Unreal Engine 5"
+                content="An experimental high-end NFT metaverse powered by Moonbeam/Polkadot and Unreal Engine 5"
               />
               <meta
                 property="og:image"
-                content="https://raw.githubusercontent.com/duyyudus/lambomoon-metaverse-web/master/static/twitter-preview.png"
+                content="https://raw.githubusercontent.com/duyyudus/lamdamoon-metaverse-web/master/static/twitter-preview.png"
               />
             </Helmet>
             <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>

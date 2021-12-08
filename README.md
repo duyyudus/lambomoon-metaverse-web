@@ -1,6 +1,6 @@
-# Lambomoon Metaverse
+# Lamdamoon Metaverse
 
-Lambomoon Metaverse website
+Lamdamoon Metaverse website
 
 ### License
 

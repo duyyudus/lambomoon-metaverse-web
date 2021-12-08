@@ -4,7 +4,7 @@ module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
     title: config.siteTitle,
-    siteUrl: `https://lambomoon.xyz`,
+    siteUrl: `https://lamdamoon.xyz`,
     description: `A blockbuster NFT metaverse powered by Moonbeam/Polkadot and Unreal Engine 5`,
   },
   plugins: [

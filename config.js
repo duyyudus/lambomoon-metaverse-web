@@ -1,26 +1,26 @@
 module.exports = {
-  siteTitle: 'Lambomoon Metaverse', // <title>
-  manifestName: 'Lambomoon',
+  siteTitle: 'Lamdamoon Metaverse', // <title>
+  manifestName: 'Lamdamoon',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#000000',
   manifestThemeColor: '#00b7c8',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/lambomoon/`,
-  authorName: 'Lambomoon',
+  pathPrefix: `/lamdamoon/`,
+  authorName: 'Lamdamoon',
   heading: 'A metaverse',
   // social
   socialLinks: [
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/yudus-labs/lambomoon-metaverse',
+      url: 'https://github.com/yudus-labs/lamdamoon-metaverse',
     },
     {
       icon: 'fa-twitter',
       name: 'Twitter',
-      url: 'https://twitter.com/lambomoon_verse',
+      url: 'https://twitter.com/lamdamoon_verse',
     },
     {
       icon: 'fa-facebook',
