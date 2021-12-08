@@ -2,9 +2,9 @@ The year is 2042, a mysterious physical entity appear out of nowhere in the midd
 
 They call it **The Genesis Portal.**
 
-In the first mission, a small group of volunteers enter the portal, and return successfully. It turns out, the portal bring them to a moon-like asteroid which fly around a planet that seems to harbor life. The alliance decides to name that planet **Lonely Asteroid May Be Outlandish ( L.A.M.B.O )** and moon-like asteroid is **LAMBO Moon.**
+In the first mission, a small group of volunteers enter the portal, and return successfully. It turns out, the portal bring them to a moon-like asteroid which fly around a planet that seems to harbor life. The alliance decides to name that planet **Lonely Asteroid May Discover Anecdotes ( L.A.M.D.A )** and moon-like asteroid is **LAMDA Moon.**
 
-Short names are **Lamda** and **Lamdamoon.** And that alliance is **L.A.M.B.O Alliance.**
+Short names are **Lamda** and **Lamdamoon.** And that alliance is **L.A.M.D.A Alliance.**
 
 Given success and insights of the first mission, humanity decides to build many moonbases on Lamdamoon which is the forwarding station for exploratory missions on Lamda planet. They are called **Lambases**, where our journey begins.
 
