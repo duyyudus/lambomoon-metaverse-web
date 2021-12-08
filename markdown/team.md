@@ -4,4 +4,4 @@ The founder, in particularly, is a former senior employee of [Virtuos Games](htt
 
 We are semi-anon, although we take our privacy serious, if you are VCs and want to perform due diligence, just contact us and we can get to know each other.
 
-Our mission is to explore new ideas and biz models that only viable with blockchain technology and decentralized economy, in combination with high-end game development technology. Lambomoon Metaverse is our first effort in this long journey.
+Our mission is to explore new ideas and biz models that only viable with blockchain technology and decentralized economy, in combination with high-end game development technology. Lamdamoon Metaverse is our first effort in this long journey.
