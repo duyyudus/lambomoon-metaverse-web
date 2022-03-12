@@ -98,11 +98,8 @@ const IndexPage = () => {
 
             <footer>
               {/* <Scroll type="id" element={'game'}> */}
-              <a
-                href="https://www.youtube.com/watch?v=tHz1bQ90aSQ"
-                className="button"
-              >
-                Watch Teaser Video
+              <a href="https://youtu.be/WLLS8oV716w" className="button">
+                Watch Official Trailer
               </a>
               {/* </Scroll> */}
             </footer>
