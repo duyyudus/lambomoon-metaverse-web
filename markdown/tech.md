@@ -1,14 +1,8 @@
-### Moonbeam Network
+### Aptos & Polkadot
 
-To keep it simple, we choose Moonbeam because we believe it will be the perfect Layer 1 blockchain platform, which is
+We originally aimed to build and deploy on Polkadot as a parachain which host important game data. But, a parachain is a bit overkill, complicated and expensive for early stage of the game, so we decided to go for another platform that is developer friendly, scalable, with a good degree of decentralization. Among L1 solutions on the market, Aptos seems to fit well with our needs ( we love Rust as well )
 
-- Most compatible with EVM, existing Ethereum toolchain should just work without any modification
-- It is secured by Polkadot network, therefore even more decentralized than all Dapps platform in top 10 ( except Ethereum )
-- It is the gateway to Substrate-based projects as well as Polkadot ecosystem
-- And finally, Moonbeam has canary chain Moonriver, we have the luxury to test in production without the risk of losing huge amount of fund in case something go wrong. It will encourage us to take risk and foster innovation
-- Oh, one last thing, its name has "moon" :D
-
-In short/medium term, we are confident that Moonbeam is sufficient for the game. That said, if we are lucky, Lamdamoon Metaverse achieve crazy high growth and need to be on its own chain, we will build a new one using Substrate and run it as a parachain. It will be EVM compatible as well, hence migration from Moonbeam should be painless.
+If things go well, in the future, we may extend to a Dot parachain and maintain cross chain bridge between two ecosystems.
 
 ### Unreal Engine 5
 

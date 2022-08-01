@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     siteUrl: `https://lamdamoon.xyz`,
-    description: `A blockbuster NFT metaverse powered by Moonbeam/Polkadot and Unreal Engine 5`,
+    description: `An experimental NFT game powered by Aptos/Polkadot and Unreal Engine 5`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',

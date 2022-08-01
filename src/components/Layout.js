@@ -52,7 +52,7 @@ class Layout extends Component {
               <title>Lamdamoon Metaverse</title>
               <meta
                 name="description"
-                content="An experimental high-end NFT metaverse powered by Moonbeam/Polkadot and Unreal Engine 5"
+                content="An experimental high-end NFT metaverse powered by Aptos/Polkadot and Unreal Engine 5"
               />
 
               <meta property="twitter:card" content="summary_large_image" />
@@ -60,7 +60,7 @@ class Layout extends Component {
               <meta property="twitter:title" content="Lamdamoon Metaverse" />
               <meta
                 property="twitter:description"
-                content="An experimental high-end NFT metaverse powered by Moonbeam/Polkadot and Unreal Engine 5"
+                content="An experimental high-end NFT metaverse powered by Aptos/Polkadot and Unreal Engine 5"
               />
               <meta
                 property="twitter:image"
@@ -72,7 +72,7 @@ class Layout extends Component {
               <meta property="og:title" content="Lamdamoon Metaverse" />
               <meta
                 property="og:description"
-                content="An experimental high-end NFT metaverse powered by Moonbeam/Polkadot and Unreal Engine 5"
+                content="An experimental high-end NFT metaverse powered by Aptos/Polkadot and Unreal Engine 5"
               />
               <meta
                 property="og:image"

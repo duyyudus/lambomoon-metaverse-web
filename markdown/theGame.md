@@ -1,4 +1,4 @@
-**Lamdamoon Metaverse** is an experimental high-end 3D NFT game built on top of Moonbeam/Polkadot and Unreal Engine 5.
+**Lamdamoon Metaverse** is an experimental high-end 3D NFT game built on top of Aptos/Polkadot and Unreal Engine 5.
 
 **Lamdamoon** is the moon of **Lamda**, the 3rd planet in **[L.A.M.D.A solar system](https://lamdamoon.xyz/#solar-system)**. The name Lamda comes from **Lonely Asteroid May Discover Anecdotes ( L.A.M.D.A )** which you can find more info about in story section.
 

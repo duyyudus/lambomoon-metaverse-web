@@ -91,7 +91,7 @@ const IndexPage = () => {
           <div className="container">
             <header>
               <h2 className="alt">
-                An experimental NFT game on Moonbeam/Polkadot
+                An experimental NFT game on Aptos/Polkadot
               </h2>
               <p>Powered by Unreal Engine 5</p>
             </header>
@@ -143,13 +143,13 @@ const IndexPage = () => {
               <div className="col-4 col-12-mobile">
                 <article className="item">
                   <a
-                    href="https://www.youtube.com/watch?v=tHz1bQ90aSQ"
+                    href="https://youtu.be/WLLS8oV716w"
                     className="image fit"
                   >
                     <img src={teaserPreview} alt="" />
                   </a>
                   <header>
-                    <h3>Lamdamoon Teaser</h3>
+                    <h3>Cinematic Trailer</h3>
                   </header>
                 </article>
 
